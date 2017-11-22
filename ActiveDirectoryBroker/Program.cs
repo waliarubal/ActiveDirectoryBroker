@@ -13,7 +13,7 @@ namespace ActiveDirectoryBroker
             {
                 host.StartService();
 
-                Console.WriteLine("Web service started successfully, press <return> to stop.");
+                Console.WriteLine("Press <return> to exit.");
                 Console.ReadLine();
             }
             else

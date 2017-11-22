@@ -340,6 +340,7 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>ActiveDirectoryBroker.Primary_output</td><td>{B383EF5C-E602-491A-A184-82EDDB4F42AE}</td><td>INSTALLDIR</td><td>2</td><td/><td>activedirectorybroker.primar</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{5E91BD3F-321A-43B9-9941-09A06253965D}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1049,6 +1050,7 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>INSTALLDIR</td><td>ActiveDirectoryBroker.Primary_output</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1860,6 +1862,7 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ActiveDirectoryBroker.Primary_output</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
 	<table name="File">
@@ -2017,6 +2020,7 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>ActiveDirectoryBroker.Primary_output</td><td/><td/><td>_75FD6986_915D_4F54_B17B_D1A9D29B71B5_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_EF14DB06_E97F_49D9_A6C6_4491149D59F2_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3714,6 +3718,8 @@
 		<row><td>ID_STRING4</td><td>1033</td><td>Rubal Walia</td><td>0</td><td/><td>-1113230272</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>ActiveDirectoryBroker</td><td>0</td><td/><td>-1113232160</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>Hosts web service to interact with Active Directory.</td><td>0</td><td/><td>-1113203488</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>https://github.com/waliarubal/ActiveDirectoryBroker</td><td>0</td><td/><td>-1113237118</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>A simple REST web service to interact with Active Directory.</td><td>0</td><td/><td>-1113222750</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1113209920</td></row>
 	</table>
 
@@ -3960,7 +3966,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{0D431CFA-1BD7-4367-A74B-00034F1C3BA6}</td></row>
 		<row><td>ISUSSignature</td><td>{9081DA6F-F672-4F1F-8B8A-9A9415564EB0}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewAppFiles,viewObjects,viewServices,viewUI,viewSystemSearch,viewCustomActions,viewRelease</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewAppFiles,viewObjects,viewServices,viewUI,viewSystemSearch,viewCustomActions,viewRelease,viewFileExtensions,viewRegistry</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4265,6 +4271,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L0">Value</col>
 		<col def="S255">ISComments</col>
 		<row><td>ALLUSERS</td><td>1</td><td/></row>
+		<row><td>ARPCOMMENTS</td><td>##ID_STRING8##</td><td/></row>
 		<row><td>ARPCONTACT</td><td>##ID_STRING4##</td><td/></row>
 		<row><td>ARPHELPLINK</td><td>##ID_STRING2##</td><td/></row>
 		<row><td>ARPHELPTELEPHONE</td><td>##ID_STRING3##</td><td/></row>
@@ -4272,6 +4279,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ARPNOMODIFY</td><td>1</td><td/></row>
 		<row><td>ARPPRODUCTICON</td><td>ARPPRODUCTICON.exe</td><td/></row>
 		<row><td>ARPSIZE</td><td/><td/></row>
+		<row><td>ARPURLINFOABOUT</td><td>##ID_STRING7##</td><td/></row>
 		<row><td>AgreeToLicense</td><td>No</td><td/></row>
 		<row><td>ApplicationUsers</td><td>AllUsers</td><td/></row>
 		<row><td>DWUSINTERVAL</td><td>30</td><td/></row>

@@ -8,7 +8,7 @@ namespace ActiveDirectoryBroker.Services
     public interface IBroker
     {
         [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
         AuthenticationResponse Authenticate(AuthenticationRequest request);
     }
 }

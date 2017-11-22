@@ -23,11 +23,13 @@ namespace ActiveDirectoryBroker.Services
             {
                 using (var context = new PrincipalContext(ContextType.Domain, request.Domain))
                 {
-                    response.IsValid = context.ValidateCredentials(request.UserName, request.Password);
+                    response.IsValid = context.ValidateCredentials(request.UserName, request.Password, ContextOptions.Negotiate);
+                    response.Message = response.IsValid ? string.Empty : "Invalid user name and/or password.";
                 }
             }
             catch(Exception ex)
             {
+                
                 response.Message = ex.Message;
             }
             
