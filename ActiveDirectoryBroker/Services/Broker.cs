@@ -27,14 +27,16 @@ namespace ActiveDirectoryBroker.Services
                     response.Message = response.IsValid ? string.Empty : "Invalid user name and/or password.";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                
+
                 response.Message = ex.Message;
             }
-            
+
 
             return response;
         }
+
+        
     }
 }
