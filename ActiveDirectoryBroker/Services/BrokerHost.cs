@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using System.Diagnostics;
+using System.Globalization;
+using System.Net;
 using System.ServiceModel;
 using System.ServiceProcess;
 
@@ -23,6 +25,8 @@ namespace ActiveDirectoryBroker.Services
             CanStop = true;
         }
 
+        #region private methods
+
         void Log(string messageFormat, params object[] parts)
         {
             var message = string.Format(messageFormat, parts);
@@ -31,6 +35,29 @@ namespace ActiveDirectoryBroker.Services
             else
                 EventLog.WriteEntry(message, EventLogEntryType.Information);
         }
+
+        DateTime GetInternetTime(Uri url = null)
+        {
+            if (url == null)
+                url = new Uri("Https://www.google.com/");
+
+            try
+            {
+                var myHttpWebRequest = WebRequest.Create(url);
+                var response = myHttpWebRequest.GetResponse();
+                var date = response.Headers["date"];
+                return DateTime.ParseExact(date,
+                                           "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
+                                           CultureInfo.InvariantCulture.DateTimeFormat,
+                                           DateTimeStyles.AssumeUniversal);
+            }
+            catch
+            {
+                return DateTime.Now;
+            }
+        }
+
+        #endregion
 
         internal void StartService()
         {
@@ -122,5 +149,7 @@ namespace ActiveDirectoryBroker.Services
         }
 
         #endregion
+
+        
     }
 }
