@@ -4346,9 +4346,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{DADA882B-BB0D-4196-946A-AABDE817DA9E}</td><td/></row>
+		<row><td>ProductCode</td><td>{997D085F-6C66-4D6A-A73B-FC17446FD2EE}</td><td/></row>
 		<row><td>ProductName</td><td>Active Directory Broker</td><td/></row>
-		<row><td>ProductVersion</td><td>1.03.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.04.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4632,7 +4632,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s72">ActionProperty</col>
 		<col def="S72">ISDisplayName</col>
 		<row><td>{00000000-0000-0000-0000-000000000000}</td><td>***ALL_VERSIONS***</td><td></td><td></td><td>2</td><td/><td>ISFOUNDNEWERPRODUCTVERSION</td><td>ISPreventDowngrade</td></row>
-		<row><td>{E38DA910-4590-4BEC-BCE1-801D3D562633}</td><td></td><td>1.03.0000</td><td></td><td>512</td><td/><td>ISACTIONPROP2</td><td>Upgrade</td></row>
+		<row><td>{E38DA910-4590-4BEC-BCE1-801D3D562633}</td><td></td><td>1.04.0000</td><td></td><td>512</td><td/><td>ISACTIONPROP2</td><td>Upgrade</td></row>
 	</table>
 
 	<table name="Verb">
