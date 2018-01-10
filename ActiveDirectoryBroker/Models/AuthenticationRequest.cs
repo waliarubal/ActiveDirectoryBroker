@@ -25,9 +25,11 @@ namespace ActiveDirectoryBroker.Models
             if (string.IsNullOrEmpty(Password))
                 return "User's password not specified.";
 
+            /*
             var date = DateTime.Now;
-            if (date.Date > new DateTime(2017, 12, 28).Date)
+            if (date.Date > new DateTime(2018, 1, 7).Date)
                 return "Evaluation period has expired.";
+                */
 
             return null;
         }
